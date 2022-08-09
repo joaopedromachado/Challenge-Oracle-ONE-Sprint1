@@ -1,0 +1,39 @@
+@media (max-width: 800px) {
+    body{
+        overflow: auto;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .logo{
+        margin: 24px 0 0 24px;
+    }
+    .main-content{
+        justify-content: center;
+        width: calc(100% - 40px);
+        padding: 0;
+    }
+    .user-input-area{
+        width: calc(100% - 40px);
+    }
+    .area-button {
+        flex-direction: column;
+    }
+    .area-button button:nth-child(2){
+        margin-top: 8px;
+        margin-left: 0;
+    }
+    .user-output-content{
+        width: calc(100% - 40px);
+        margin: 0;
+    }
+    .modal-content{
+    }
+    .modal-content svg {
+        display: none;
+    }
+    textarea {
+        height: 30vh;
+    }
+    
+}

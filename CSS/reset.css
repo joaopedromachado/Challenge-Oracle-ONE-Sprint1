@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    /* outline: 1px solid red; */
+    font-family: 'Inter', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
