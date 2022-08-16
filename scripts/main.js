@@ -47,28 +47,13 @@ function codificar() {
 function decodificar() {
     mostrarTela();
     let entrada = texto.value;
+    let res;
 
     texto2.value = "";
 
-    for(let i=0; i < entrada.length; i++){
-        if ((entrada[i] != entrada[i].toUpperCase()) || entrada[i] == " ") {
-            if (entrada[i] == "ai") {
-                texto2.value += "a";
-            } else if (entrada[i] == "enter") {
-                texto2.value += "e";
-            } else if (entrada[i] == "imes") {
-                texto2.value += "i";
-            } else if (entrada[i] == "ober") {
-                texto2.value += "o";
-            } else if (entrada[i] == "ufat") {
-                texto2.value += "u";
-            } else {
-                texto2.value += entrada[i];
-            }
-        }else{
-            alert("Não é permitido letras maiusculas!!")
-        }
-    }
+    res = entrada.replaceAll("ai", "a").replaceAll("enter", "e").replaceAll("imes", "i").replaceAll("ober", "o").replaceAll("ufat", "u")
+    
+    texto2.value = res;
 }
 
 
